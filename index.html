@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海森堡 Heisenberg · 越野跑者</title>
+<meta name="description" content="海森堡的个人主页：越野跑者，2026 年 5 场比赛，100 座山计划进行中。">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0c0f0d; color: #e8e6e1; font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; line-height: 1.7; }
+  .hero { position: relative; height: 92vh; min-height: 480px; overflow: hidden; }
+  .hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(12,15,13,.15), rgba(12,15,13,.55) 70%, #0c0f0d); }
+  .hero-text { position: absolute; left: 50%; bottom: 12%; transform: translateX(-50%); text-align: center; z-index: 2; width: 92%; }
+  .hero-text h1 { font-size: clamp(2.6rem, 7vw, 4.5rem); letter-spacing: .12em; font-weight: 800; }
+  .hero-text p { margin-top: .4rem; font-size: clamp(1rem, 2.4vw, 1.25rem); color: #d8c9a3; letter-spacing: .35em; }
+  main { max-width: 760px; margin: 0 auto; padding: 3.5rem 1.5rem 4rem; }
+  section { margin-bottom: 3.5rem; }
+  h2 { font-size: 1.15rem; letter-spacing: .3em; color: #d8c9a3; margin-bottom: 1.2rem; }
+  .about p { font-size: 1.05rem; color: #cfccc4; }
+  .races { border-top: 1px solid #2a2e29; }
+  .race { display: flex; justify-content: space-between; gap: 1rem; padding: .85rem 0; border-bottom: 1px solid #2a2e29; }
+  .race .name { font-weight: 600; }
+  .race .meta { color: #9a978d; white-space: nowrap; font-size: .95rem; }
+  .progress-wrap { background: #1d211d; border-radius: 999px; height: 10px; overflow: hidden; margin: .9rem 0 .5rem; }
+  .progress { height: 100%; width: 44%; background: linear-gradient(90deg, #b98a2f, #e3c37a); border-radius: 999px; }
+  .mountains .num { font-size: 2.6rem; font-weight: 800; line-height: 1.1; }
+  .mountains .num span { color: #d8c9a3; }
+  .mountains p, .training p { color: #cfccc4; }
+  .training .big { font-size: 1.5rem; font-weight: 700; margin-bottom: .4rem; }
+  .fav { background: #141814; border-left: 3px solid #d8c9a3; padding: 1.2rem 1.4rem; border-radius: 0 10px 10px 0; }
+  .fav p { color: #cfccc4; }
+  footer { text-align: center; color: #77756e; font-size: .85rem; padding: 2rem 1rem 3rem; border-top: 1px solid #22261f; }
+  @media (max-width: 560px) {
+    .race { flex-direction: column; gap: .1rem; }
+  }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <img src="hero.jpg" alt="黎明时分的山间小径">
+    <div class="hero-text">
+      <h1>海森堡</h1>
+      <p>越野跑者 · 在路上</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>关于我</h2>
+      <p>一名越野跑者。2026 年跑了 5 场比赛，正在爬 100 座山。每天 100 个俯卧撑、100 个深蹲，风雨无阻。</p>
+    </section>
+
+    <section>
+      <h2>2026 · 比赛记录</h2>
+      <div class="races">
+        <div class="race"><span class="name">BATURU 关门山</span><span class="meta">2026-05-24 · 29 km</span></div>
+        <div class="race"><span class="name">青山之巅</span><span class="meta">2026-06-28 · 23 km</span></div>
+        <div class="race"><span class="name">东北100 · 松花湖</span><span class="meta">2026-09-06 · 20 km</span></div>
+        <div class="race"><span class="name">延边100</span><span class="meta">2026-09-26 · 32 km</span></div>
+        <div class="race"><span class="name">大连 TDH · 黄泥川</span><span class="meta">2026-10-18 · 24 km组</span></div>
+      </div>
+    </section>
+
+    <section class="mountains">
+      <h2>100 座山计划</h2>
+      <div class="num"><span>44</span> / 100</div>
+      <div class="progress-wrap"><div class="progress"></div></div>
+      <p>2025 年 23 座，2026 年 21 座。最近一座：2026-10-19，大连望鱼山。</p>
+    </section>
+
+    <section class="training">
+      <h2>每日训练</h2>
+      <div class="big">100 俯卧撑 + 100 深蹲</div>
+      <p>每天 5 组 × 20 个。身体是本钱。</p>
+    </section>
+
+    <section>
+      <h2>最喜欢的一场</h2>
+      <div class="fav">
+        <p>东北100松花湖。气氛和补给都最好，补给站的鱼汤很香，喝完感觉浑身有劲，像能飞起来。明年还要去。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Heisenberg · heisenberg.loc.cc</footer>
+</body>
+</html>
